@@ -32,7 +32,7 @@ export default class Aluno extends BaseModel {
       data: aluno_obj
     })
   }
-  static async ListarAlunos(request, response) {
+  static async ListarAlunos(response) {
     return response.status(200)
     .send({
       message: 'Aluno foi criado',

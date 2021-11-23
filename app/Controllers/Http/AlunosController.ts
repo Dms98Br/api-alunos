@@ -34,7 +34,7 @@ export default class AlunosController {
     }
     public async ListarAlunos({ request, response }: HttpContextContract) {
         try {
-            return Aluno.ListarAlunos(request.all(), response);
+            return Aluno.ListarAlunos(request.all(),);
         } catch (error) {
             return response.status(200)
                 .send({
